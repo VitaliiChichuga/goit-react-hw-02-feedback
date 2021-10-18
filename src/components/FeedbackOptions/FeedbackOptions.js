@@ -16,11 +16,11 @@ const Feedback = ({ options, onLeaveFeedback }) => (
   </>
 );
 
-Feedback.prototype = {
-  good: PropTypes.func.isRequired,
-  neutral: PropTypes.func.isRequired,
-  bad: PropTypes.func.isRequired,
+Feedback.protoTypes = {
+  options: PropTypes.arrayOf(PropTypes.string),
+  onLeaveFeedback: PropTypes.array,
 };
+
 
 export default Feedback;
 
